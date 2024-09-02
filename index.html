@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudAdvisor.ee | Your Trusted Cloud Migration Experts</title>
+    <style>
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.hero {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-end; /* Align to the bottom */
+}
+
+.parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('hero-image.webp') no-repeat center center;
+    background-size: cover;
+    will-change: transform;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 40px 20px; /* Adjust padding as needed */
+    border-radius: 10px;
+    color: white;
+    max-width: 80%;
+    text-align: center;
+    margin-bottom: 30px; /* Add margin to ensure space at the bottom */
+    position: relative; /* Ensure it's above the parallax */
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.cta-button {
+    background: #006699;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.service {
+    margin-bottom: 30px;
+}
+
+.service h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <div class="parallax"></div>
+    <div class="hero-content">
+        <h1>Your Trusted Cloud Migration Experts</h1>
+        <p>We help businesses seamlessly migrate and optimize their cloud infrastructure on AWS and GCP.</p>
+        <a href="#contact" class="cta-button">Get a Free Consultation</a>
+    </div>
+</div>
+
+
+<script>
+    document.addEventListener('scroll', function() {
+        const parallax = document.querySelector('.parallax');
+        let scrollPosition = window.scrollY;
+        parallax.style.transform = 'translateY(' + (scrollPosition * 0.5) + 'px)';
+    });
+</script>
+
+
+<div class="services">
+    <div class="service">
+        <h2>Cloud Migration</h2>
+        <p>Seamlessly migrate your infrastructure to the cloud with minimal disruption.</p>
+    </div>
+    <div class="service">
+        <h2>Architecture Design</h2>
+        <p>Design scalable, secure, and cost-effective cloud solutions tailored to your business needs.</p>
+    </div>
+    <div class="service">
+        <h2>Cost Optimization</h2>
+        <p>Optimize your cloud spend with our expert analysis and strategies.</p>
+    </div>
+    <div class="service">
+        <h2>Security & Compliance</h2>
+        <p>Ensure your cloud environment is secure and compliant with industry standards.</p>
+    </div>
+</div>
+
+<footer>
+    <p>© 2024 CloudAdvisor.ee. All rights reserved.</p>
+    <p>Contact us at: info@cloudadvisor.ee</p>
+</footer>
+
+</body>
+</html>
